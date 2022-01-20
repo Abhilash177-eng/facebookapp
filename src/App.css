@@ -1,38 +1,668 @@
-.App {
-  text-align: center;
+body {
+  background-color: #f0f2f5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fbimg {
+  margin-left: 15.8%;
+  margin-top: 11.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fblogo {
+  width: 23.2%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.contDiv {
+  width: 30%;
+  height: 5%;
+}
+
+.profilePageImg {
+  width: 10%;
+  height: 20%;
+}
+
+.profilePageName {
+  margin-left: 19%;
+  margin-top: -8%;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+}
+
+.cont {
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: 30px;
+  width: auto;
+  margin-left: 5%;
+  margin-top: -1.8%;
+  font-size: 28px;
+  color: #1c1e21;
+}
+
+.inputField {
+  width: 26%;
+  background-color: white;
+  height: 46%;
+  margin-left: 55.5%;
+  position: absolute;
+  margin-top: -2.7%;
+  border-radius: 8px;
+}
+
+.inputclass {
+  padding: 8px 10px 10px 0;
+  width: 80%;
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 2%;
+  line-height: 1.4;
+  position: absolute;
+  margin: 7%;
+}
+
+.inputclass:focus {
+  outline: none;
+  border-bottom: 3px solid skyblue;
+}
+
+.buttonclass {
+  width: 85%;
+  height: 14%;
+  margin-top: 36%;
+  margin-left: 6%;
+  background-color: #1877f2;
+  font-family: Roboto, Arial, sans-serif;
   color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.forgetpassword {
+  font-size: 15px;
+  color: #1877f2;
+  cursor: pointer;
+  margin-left: 30%;
+  margin-top: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.extraArrow {
+  padding: 8px 10px 10px 0;
+  width: 80%;
+  color: #000;
+  font-size: inherit;
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  margin-left: 2%;
+  line-height: 1.4;
+  position: absolute;
+  margin: 7%;
+  margin-top: -0.5%;
+}
+
+.newAccountButton {
+  width: 50%;
+  height: 14%;
+  margin-top: 13%;
+  margin-left: 23%;
+  background-color: #42b72a;
+  font-family: Roboto, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.signupBody {
+  width: 30%;
+  height: 65%;
+  background-color: #fff;
+  margin-left: 35%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+.text1 {
+  color: #1c1e21;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 0;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+
+.tagLine {
+  color: #606770;
+  font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 5%;
+  margin-top: 0.5%;
+}
+
+.xbutton {
+  margin-left: 93%;
+  margin-top: -15%;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+}
+
+.signupInput {
+  padding: 8px 10px 10px 0;
+  width: 35%;
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 2%;
+  line-height: 1.4;
+  position: absolute;
+  margin: 7%;
+}
+
+.postCapInput {
+  padding: 8px 10px 10px 0;
+  width: 35%;
+  color: #000;
+  font-size: inherit;
+  background: #fff;
+  border: none;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 5%;
+  line-height: 1.4;
+  position: absolute;
+  margin-top: 25%;
+}
+
+.signupInput:focus {
+  outline: none;
+  border-bottom: 3px solid skyblue;
+}
+
+.postCapInput:focus {
+  outline: none;
+  border-bottom: 3px solid skyblue;
+}
+
+.genderBox {
+  background-color: #fff;
+  border: 1px solid #ccd0d5;
+  box-sizing: border-box;
+  display: inline-block;
+  flex: 1 0 auto;
+  font-weight: normal;
+  height: 36px;
+  margin-top: 60%;
+  padding: 0;
+  position: relative;
+  width: 28%;
+  margin-left: 6%;
+  color: #1c1e21;
+}
+
+.homenav {
+  background-color: #fff;
+  width: 100%;
+  height: 7.5%;
+  position: absolute
+}
+
+.homecontent {
+  display: flex;
+}
+
+.section1 {
+  background-color: #f0f2f5;
+  width: 31%;
+  position: absolute;
+  height: 100%;
+  margin-top: 58px;
+}
+
+.section2 {
+  background-color: #f0f2f5;
+  width: 38%;
+  height: 100%;
+  margin-left: 31%;
+  position: absolute;
+  margin-top: 86px;
+  overflow: auto;
+}
+
+.section3 {
+  background-color: #f0f2f5;
+  width: 31%;
+  height: 100%;
+  margin-left: 69%;
+  position: absolute;
+  margin-top: 58px;
+}
+
+.facebookicon {
+  color: #1877F2;
+  font-size: 42px;
+  margin-left: 15px;
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+.searchBox {
+  width: 16%;
+  height: 60%;
+  margin-left: 0.3%;
+  margin-top: 0.7%;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #f0f2f5;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+  color: #1c1e21;
+  padding-left: 30px;
+}
+
+.facebookHome, .fbFriends {
+  color: #1877F2;
+  font-size: 25px;
+  margin-left: 29%;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.posts {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+}
+
+.profileImageHolder {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width: 10%;
+  height: 5%;
+}
+
+.caption {
+  margin-top: 4%;
+  margin-left: 2%;
+}
+
+.settingsDiv {
+  width: 39%;
+  height: 10%;
+  background-color: #fff;
+  position: absolute;
+  margin-left: 55%;
+  color: #1877F2;
+  font-size: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.uploadIcon {
+  margin-left: 2%;
+  color: #1877F2;
+}
+
+.postImages {
+  width: 34%;
+  height: 75%;
+  margin-top: 5%;
+  margin-left: 33%;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.createPostStyle {
+  font-size: 1.25rem;
+  font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+  color: black;
+  font-weight: bolder;
+  margin-left: 34%;
+}
+
+.peopleYouMayKnow {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+  margin-left: 2%;
+}
+
+.friendCointainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.friendBox {
+  width: 200px;
+  height: 300px;
+  margin-left: 10%;
+  background-color: #fff;
+  position: relative;
+  border-radius: 16px;
+  margin-top: 2%;
+}
+
+.friendImageHolde {
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  width: 40%;
+  height: 10%;
+}
+
+.addFriendButton {
+  background-color: #f0f2f5;
+  width: 45%;
+  height: 10%;
+  position: absolute;
+  color: #1877F2;
+  margin-left: 25%;
+  text-align: center;
+  margin-top: 15%;
+  cursor: pointer;
+}
+
+homeDpPosition {
+  margin-left: 40%;
+  display: inline-block;
+}
+
+homeDpImagePosition {
+  width: 30px;
+  height: auto;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  .fblogo {
+    width: 50.2%
   }
-  to {
-    transform: rotate(360deg);
+
+  .inputField {
+    width: 87%;
+    background-color: white;
+    height: 63%;
+    margin-left: 5.5%;
+    position: absolute;
+    margin-top: 45.3%;
+    border-radius: 8px;
+  }
+
+  .inputclass {
+    padding: 8px 10px 10px 0;
+    width: 80%;
+    color: #000;
+    font-size: inherit;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    margin-left: 2%;
+    line-height: 1.4;
+    position: absolute;
+    margin: 8%;
+  }
+
+  .newAccountButton {
+    width: 77%;
+    height: 12%;
+    margin-top: 24%;
+    margin-left: 11%;
+    background-color: #42b72a;
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .buttonclass {
+    width: 73%;
+    height: 10%;
+    margin-top: 43%;
+    margin-left: 11%;
+    background-color: #1877f2;
+    font-family: Roboto, Arial, sans-serif;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  extraArrow {
+    padding: 8px 10px 10px 0;
+    width: 80%;
+    color: #000;
+    font-size: inherit;
+    border: none;
+    border-bottom: 2px solid #e0e0e0;
+    margin-left: 2%;
+    line-height: 1.4;
+    position: absolute;
+    margin: 7%;
+    margin-top: -0.5%;
+  }
+
+  .fbimg {
+    margin-left: -2.2%;
+    margin-top: 11.5%;
+  }
+
+  .contDiv {
+    width: 60%;
+    height: 10%;
+  }
+
+  .forgetpassword {
+    font-size: 13px;
+    color: #1877f2;
+    cursor: pointer;
+    margin-left: 14%;
+    margin-top: 2%;
+  }
+
+  .cont {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 21px;
+    width: auto;
+    margin-left: 10%;
+    margin-top: -1.8%;
+    font-size: 18px;
+    color: #1c1e21;
+  }
+
+  .signupBody {
+    width: 90%;
+    height: 65%;
+    background-color: #fff;
+    margin-left: 4%;
+    margin-top: 16%;
+    position: absolute;
+  }
+
+  .text1 {
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .tagLine {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: 5%;
+    margin-top: 0.5%;
+  }
+
+  .xbutton {
+    margin-left: 93%;
+    margin-top: -15%;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+
+  .genderBox {
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1 0 auto;
+    font-weight: normal;
+    height: 36px;
+    margin-top: 60%;
+    padding: 0;
+    position: relative;
+    width: 35%;
+    margin-left: 6%;
+    color: #1c1e21;
+  }
+
+  .postImages {
+    width: 81%;
+    height: 70%;
+    margin-top: 17%;
+    margin-left: 7%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (min-width:501px) and (max-width: 999px) {
+
+  .fblogo {
+    width: 48.2%
+  }
+
+  .inputField {
+    width: 76%;
+    background-color: white;
+    height: 70%;
+    margin-left: 10.5%;
+    position: absolute;
+    margin-top: 37.3%;
+    border-radius: 8px;
+  }
+
+
+  .fbimg {
+    margin-left: -0.2%;
+    margin-top: 12.5%;
+  }
+
+  .contDiv {
+    width: 97%;
+    height: 10%;
+  }
+
+
+  .cont {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 28px;
+    width: auto;
+    margin-left: 11%;
+    margin-top: -0.8%;
+    font-size: 29px;
+    color: #1c1e21;
+  }
+
+  .signupBody {
+    width: 90%;
+    height: 74%;
+    background-color: #fff;
+    margin-left: 4%;
+    margin-top: 16%;
+    position: absolute;
+  }
+
+  .text1 {
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+    font-weight: bold;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+
+  .tagLine {
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    margin-left: 5%;
+    margin-top: 0.5%;
+  }
+
+  .xbutton {
+    margin-left: 93%;
+    margin-top: -8%;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+  }
+
+  .genderBox {
+    background-color: #fff;
+    border: 1px solid #ccd0d5;
+    box-sizing: border-box;
+    display: inline-block;
+    flex: 1 0 auto;
+    font-weight: normal;
+    height: 36px;
+    margin-top: 60%;
+    padding: 0;
+    position: relative;
+    width: 35%;
+    margin-left: 6%;
+    color: #1c1e21;
+  }
+
+  .postImages {
+    width: 81%;
+    height: 70%;
+    margin-top: 17%;
+    margin-left: 7%;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 10px;
   }
 }
